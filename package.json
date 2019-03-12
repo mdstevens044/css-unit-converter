@@ -1,0 +1,22 @@
+{
+  "name": "css-unit-converter",
+  "version": "1.0.0",
+  "description": "Application to convert different CSS units",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdstevens044/css-unit-converter.git"
+  },
+  "author": "Mike Stevens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdstevens044/css-unit-converter/issues"
+  },
+  "homepage": "https://github.com/mdstevens044/css-unit-converter#readme",
+  "devDependencies": {
+    "electron": "^4.0.8"
+  }
+}
