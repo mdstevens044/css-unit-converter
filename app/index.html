@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CSS Unit Converter</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="input-labels" for="defaultFontSize">Default font size</label>
+            <input type="number" class="form-control" id="defaultFontSize" value="14" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="input-labels" for="pixels">Pixels</label>
+            <input type="number" class="form-control" id="pixels" value="20" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label class="input-labels" for="resultInRem">Result in Rem</label>
+            <input type="text" class="form-control" id="resultInRem" readonly />
+          </div>
+        </div>
+      </div>
+      <div class="row definition">
+        <div class="col">
+          <p>
+            <p class="center-top">
+              rem definition
+            </p>
+            <i class="fas fa-bookmark fa-2x"></i>
+            The rem (root em) will always equal the size of the default base font-size; 
+            inherited font sizes will have no effect, so this sounds like a much better 
+            option than em, although rems don't work in older versions of Internet Explorer
+            <p class="center-bottom">
+              * definition provided by https://developer.mozilla.org
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>window.$ = window.jQuery = require("jquery");</script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

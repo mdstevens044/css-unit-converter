@@ -1,0 +1,39 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container {
+  margin-top: 20%;
+}
+.input-labels {
+  margin-bottom: 0;
+}
+.form-control[readonly] {
+  background-color: #FFFFFF !important;
+  transition: none;
+}
+.form-control[readonly]:focus {
+  border-color: #CED4DA;
+  box-shadow: none;
+}
+.definition {
+  margin-top: 10rem;
+  background-color: #D2D2D2;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+}
+.center-top {
+  text-align: center;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.fa-bookmark {
+  margin: 0.3rem 0.75rem 0 0;
+  float: left;
+}
+.center-bottom {
+  text-align: center;
+  margin-top: 1.25rem;
+}
