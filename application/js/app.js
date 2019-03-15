@@ -10,17 +10,20 @@ function createWindow() {
     width: 600,
     height: 700,
     resizable: false,
-    icon: "../images/css-unit-converter-icon.png"
+    icon: "../images/css-unit-converter-icon.png",
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
 
   // and load the index.html of the app.
-  win.loadFile('index.html');
+  win.loadFile('./app/index.html');
 
   // hide menu bar
   win.setMenuBarVisibility(false);
 
   // Open the DevTools.
-  // win.webContents.openDevTools()
+  // win.webContents.openDevTools();
 
   // Emitted when the window is closed.
   win.on('closed', () => {

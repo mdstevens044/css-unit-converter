@@ -4,9 +4,10 @@
 /dist
 /tmp
 /out-tsc
+/application/CSS*
 
 # dependencies
-/node_modules
+/application/node_modules
 
 # IDEs and editors
 /.idea
