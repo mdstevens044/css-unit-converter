@@ -1,5 +1,6 @@
 {
   "name": "css-unit-converter",
+  "productName": "CSS Unit Converter",
   "version": "1.0.0",
   "description": "Application to convert different CSS units",
   "main": "../js/app.js",
