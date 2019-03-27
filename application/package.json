@@ -6,7 +6,15 @@
   "main": "./js/app.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "com.electron.css-unit-converter",
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    }
   },
   "repository": {
     "type": "git",
@@ -21,6 +29,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
     "electron": "^4.1.0",
+    "electron-builder": "^20.39.0",
     "electron-packager": "^13.1.1"
   },
   "dependencies": {
