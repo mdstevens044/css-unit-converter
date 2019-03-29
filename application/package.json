@@ -30,7 +30,8 @@
     "@fortawesome/fontawesome-free": "^5.7.2",
     "electron": "^4.1.0",
     "electron-builder": "^20.39.0",
-    "electron-packager": "^13.1.1"
+    "electron-packager": "^13.1.1",
+    "install-peers": "^1.0.3"
   },
   "dependencies": {
     "jquery": "^3.3.1"
