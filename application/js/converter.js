@@ -1,19 +1,19 @@
 (function() {
-  document.getElementById("resultInRem").value = (20 / 14) + "rem";
+  document.getElementById("afterConvert").value = (20 / 14) + "rem";
 }());
 
 function convert()
 {
-  const pixels = parseFloat(document.getElementById("pixels").value);
+  const beforeConvert = parseFloat(document.getElementById("beforeConvert").value.replace("px", ""));
   const defaultFontSize = parseFloat(document.getElementById("defaultFontSize").value);
 
-  if((!isNaN(pixels)) && (!isNaN(defaultFontSize)))
+  if((!isNaN(beforeConvert)) && (!isNaN(defaultFontSize)))
   {
-    document.getElementById("resultInRem").value = (pixels / defaultFontSize) + "rem";
+    document.getElementById("afterConvert").value = (beforeConvert / defaultFontSize) + "rem";
   } else {
-    document.getElementById("resultInRem").value = "";
+    document.getElementById("afterConvert").value = "";
   }
 }
 
 document.getElementById("defaultFontSize").addEventListener('keyup', function() { convert(); });
-document.getElementById("pixels").addEventListener('keyup', function() { convert(); });
+document.getElementById("beforeConvert").addEventListener('keyup', function() { convert(); });
