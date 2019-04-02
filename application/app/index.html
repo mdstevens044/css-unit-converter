@@ -12,6 +12,17 @@
   </head>
   <body>
     <div class="container">
+      <div class="row top-row">
+        <div class="col-sm-4">&nbsp;</div>
+        <div class="col-sm-4">
+          <label for="conversionType">Conversion Type</label>
+          <select class="form-control" id="conversionType">
+            <option value="pxToRem">px to rem</option>
+            <option value="remToPx">rem to px</option>
+          </select>
+        </div>
+        <div class="col-sm-4">&nbsp;</div>
+      </div>
       <div class="row">
         <div class="col">
           <div class="form-group">
@@ -29,7 +40,7 @@
         </div>
         <div class="col">
           <div class="form-group">
-            <label class="input-labels" id="afterConvertLabel" for="afterConvert">Result in Rem</label>
+            <label class="input-labels" id="afterConvertLabel" for="afterConvert">Result in rem</label>
             <input type="text" class="form-control" id="afterConvert" readonly />
           </div>
         </div>
